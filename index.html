@@ -10,9 +10,33 @@
     <!-- Cab CSS Files-->
     <link rel="stylesheet" href="assets/css/cab_app.css" />
     <link rel="stylesheet" href="assets/css/cab_main.css" />
+    <style>
+        .cookies {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            height: 80px;
+            width: 100vw;
+            background-color: white;
+            color: black;
+            z-index: 999;
+            transition: all;
+        }
+
+        .cookiesBtn {
+            background-color: #1f2427;
+            color: white;
+            border-radius: 40px;
+        }
+    </style>
 </head>
 
 <body class="cab-homepage-v2" id="bodyTop">
+    <div class="cookies text-center py-3" id="cookiesBox">
+        <p class="d-inline pt-3">Our cookies follows terms and condition for better exprience.</p>
+        <button id="accept_cookies" class="cookiesBtn ms-5">accept all cookies</button>
+        <button id="cancel_cookies" class="cookiesBtn ">cancel</button>
+    </div>
 
     <!-- Cab Header v2 Starts Here -->
     <header class="cab-header v2">
@@ -62,7 +86,8 @@
     <!-- Cab Header v2 Ends Here -->
 
     <!-- Cab Hero v2 Starts Here -->
-    <section class="cab-hero-section v2" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(assets/img/hero-v2.jpg) no-repeat top center;background-size: cover;background-attachment: fixed;">
+    <section class="cab-hero-section v2"
+        style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(assets/img/hero-v2.jpg) no-repeat top center;background-size: cover;background-attachment: fixed;">
         <div class="container">
             <div class="cab-hero-inner">
                 <div class="cab-small-heading">
@@ -71,7 +96,7 @@
                 </div>
                 <div class="cab-big-heading">
                     <h1 class="display-2">
-                       Royal Crab
+                        Royal Crab
                     </h1>
                 </div>
                 <div class="cab-hero-date-text">
@@ -128,13 +153,15 @@
                         <div class="col-sm-4 form-group">
                             <div class="cab-input-group">
                                 <span class="input-icon"><i class="flaticon-calendar"></i></span>
-                                <input type="text" class="form-control dateOnly hover-pointer" placeholder="mm/dd/yyyy" readonly>
+                                <input type="text" class="form-control dateOnly hover-pointer" placeholder="mm/dd/yyyy"
+                                    readonly>
                             </div>
                         </div>
                         <div class="col-sm-4 form-group">
                             <div class="cab-input-group">
                                 <span class="input-icon"><i class="flaticon-future"></i></span>
-                                <input type="text" class="form-control timeOnly hover-pointer" placeholder="00:00 AM" readonly>
+                                <input type="text" class="form-control timeOnly hover-pointer" placeholder="00:00 AM"
+                                    readonly>
                                 <span class="caret-icon-custom"><i class="caret"></i></span>
                             </div>
                         </div>
@@ -166,10 +193,15 @@
                                 The Purest Taste of the Sea
                             </h1>
                             <p>
-                                At Royal Crab, we believe the finest flavors come from the simplest cooking. Our chefs use fresh, high-quality seafood and prepare it with methods that preserve its natural taste and nutrition. From succulent crab legs to tender lobster and oysters, every dish is a celebration of the ocean’s bounty—served in a warm, inviting atmosphere where every guest feels like royalty.
+                                At Royal Crab, we believe the finest flavors come from the simplest cooking. Our chefs
+                                use fresh, high-quality seafood and prepare it with methods that preserve its natural
+                                taste and nutrition. From succulent crab legs to tender lobster and oysters, every dish
+                                is a celebration of the ocean’s bounty—served in a warm, inviting atmosphere where every
+                                guest feels like royalty.
                             </p>
                             <div class="cab-cta-btn-about-box">
-                                <a href="reservation.html" class="cab-btn cab-btn-primary px-extra-padding">Book A Table Now</a>
+                                <a href="reservation.html" class="cab-btn cab-btn-primary px-extra-padding">Book A Table
+                                    Now</a>
                             </div>
                         </div>
                     </div>
@@ -199,7 +231,8 @@
                                 <h6>Lobster Bisque</h6>
                                 <p class="price-tag">$7.00</p>
                                 <p>
-                                    A rich and creamy soup perfect for seafood lovers, the Lobster Bisque is offered at $7.00.
+                                    A rich and creamy soup perfect for seafood lovers, the Lobster Bisque is offered at
+                                    $7.00.
                                 </p>
                             </div>
                             <div class="cab-offer-img">
@@ -217,7 +250,8 @@
                                 <h6>Crab Rangoons</h6>
                                 <p class="price-tag">$8.50</p>
                                 <p>
-                                    A popular appetizer item, the Crab Rangoons are crispy, golden bites filled with savory crab and cream cheese, priced at $8.50.
+                                    A popular appetizer item, the Crab Rangoons are crispy, golden bites filled with
+                                    savory crab and cream cheese, priced at $8.50.
                                 </p>
                             </div>
                             <div class="cab-offer-img">
@@ -232,7 +266,8 @@
                                 <h6>Fried Shrimp Basket (8 pcs)</h6>
                                 <p class="price-tag">$16.50</p>
                                 <p>
-                                   For a heartier option, the Fried Shrimp Basket includes eight pieces of breaded shrimp, priced at $16.50.
+                                    For a heartier option, the Fried Shrimp Basket includes eight pieces of breaded
+                                    shrimp, priced at $16.50.
                                 </p>
                             </div>
                             <div class="cab-offer-img">
@@ -247,7 +282,8 @@
     <!-- Cab Special Dishes Section Ends Here -->
 
     <!-- Cab CTA v2 Section Starts Here -->
-    <section class="cab-cta-section v2" style="background: url(assets/img/cta-v2.jpg) no-repeat top; background-size: cover;">
+    <section class="cab-cta-section v2"
+        style="background: url(assets/img/cta-v2.jpg) no-repeat top; background-size: cover;">
         <div class="container">
             <div class="cab-cta-content">
                 <div class="row">
@@ -333,7 +369,8 @@
     <!-- Cab News & Events v2 Section Ends Here -->
 
     <!-- Cab Testimonials V2 Section Starts Here -->
-    <section class="cab-testimonials-section v2" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(assets/img/testimonials-bg1.jpg) no-repeat center fixed; background-size: cover">
+    <section class="cab-testimonials-section v2"
+        style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(assets/img/testimonials-bg1.jpg) no-repeat center fixed; background-size: cover">
         <div class="container">
             <div class="cab-heading-box v2">
                 <div class="cab-small-heading">
@@ -350,7 +387,10 @@
                             <div class="testimonial-card">
                                 <div class="testimonial-words">
                                     <p>
-                                        “Man, what a phenomenal meal. In a great, clean atmosphere. With a feeling of getting our money’s worth! Coco and Bill were absolutely amazing hosts… Probably one of the best crab boils I've had from spanning across the states from Hawaii to NY.”</p>
+                                        “Man, what a phenomenal meal. In a great, clean atmosphere. With a feeling of
+                                        getting our money’s worth! Coco and Bill were absolutely amazing hosts… Probably
+                                        one of the best crab boils I've had from spanning across the states from Hawaii
+                                        to NY.”</p>
                                 </div>
                                 <div class="testimonial-author clearfix">
                                     <div class="author-avatar">
@@ -369,7 +409,10 @@
                             <div class="testimonial-card">
                                 <div class="testimonial-words">
                                     <p>
-                                        "Our daughter has been asking for a crab boil meal for over a year now… we finally took her for her birthday... The seasoning was amazing... our waiter was great… gave our daughter a slice of cheesecake for her birthday. This is definitely a place we will visit again."</p>
+                                        "Our daughter has been asking for a crab boil meal for over a year now… we
+                                        finally took her for her birthday... The seasoning was amazing... our waiter was
+                                        great… gave our daughter a slice of cheesecake for her birthday. This is
+                                        definitely a place we will visit again."</p>
                                 </div>
                                 <div class="testimonial-author clearfix">
                                     <div class="author-avatar">
@@ -388,7 +431,10 @@
                             <div class="testimonial-card">
                                 <div class="testimonial-words">
                                     <p>
-                                        “The interior’s clean… food is great… greeted as soon as I walked in. The waiter was excellent… The food came fast and it was delicious. If you want a good seafood boil that you’ve probably seen on TikTok then go to this place—you’ll have some great food and a great experience. Also, it’s kind of cheap.”</p>
+                                        “The interior’s clean… food is great… greeted as soon as I walked in. The waiter
+                                        was excellent… The food came fast and it was delicious. If you want a good
+                                        seafood boil that you’ve probably seen on TikTok then go to this place—you’ll
+                                        have some great food and a great experience. Also, it’s kind of cheap.”</p>
                                 </div>
                                 <div class="testimonial-author clearfix">
                                     <div class="author-avatar">
@@ -417,7 +463,8 @@
             <div class="cab-newsletter-inner text-center">
                 <h3 class="heading-style">Subscribe our newsletter</h3>
                 <p>
-                    "Subscribe to Royal Crab’s newsletter for exclusive seafood specials, seasonal updates, and event news—bringing fresh flavors and great deals straight to your inbox."
+                    "Subscribe to Royal Crab’s newsletter for exclusive seafood specials, seasonal updates, and event
+                    news—bringing fresh flavors and great deals straight to your inbox."
 
                 </p>
                 <div class="cab-newsletter-form-box">
@@ -432,7 +479,8 @@
     <!-- Cab Newsletter Section Ends Here -->
 
     <!-- Cab Footer Starts Here -->
-    <footer class="cab-footer v2" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(assets/img/footer-bg1.jpg) no-repeat center fixed;">
+    <footer class="cab-footer v2"
+        style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(assets/img/footer-bg1.jpg) no-repeat center fixed;">
         <div class="cab-footer-info-section">
             <div class="container">
                 <div class="row">
@@ -478,7 +526,8 @@
                             </div>
                             <div class="info-details">
                                 <p>
-                                    <span class="d-block">Main Email: <a href="mailto:example@demo.com">example@demo.com</a></span>
+                                    <span class="d-block">Main Email: <a
+                                            href="mailto:example@demo.com">example@demo.com</a></span>
                                     <span class="d-block">Phone: <a href="tel:+14059856666">+14059856666</a></span>
                                 </p>
                             </div>
@@ -486,7 +535,8 @@
                     </div>
                 </div>
                 <div class="cab-footer-book-table-btn-box">
-                    <a href="reservation.html" class="cab-btn cab-btn-primary-outline smooth-scroll">Book a table now</a>
+                    <a href="reservation.html" class="cab-btn cab-btn-primary-outline smooth-scroll">Book a table
+                        now</a>
                 </div>
             </div>
         </div>
@@ -511,6 +561,21 @@
     <!-- Cab Script Files -->
     <script src="assets/js/cab_app.js"></script>
     <script src="assets/js/cab_main.js"></script>
+    <script>
+        if (sessionStorage.getItem('cookiesDismissed') === 'true') {
+            document.getElementById('cookiesBox').style.display = 'none';
+        }
+
+        document.getElementById("accept_cookies").addEventListener('click', function () {
+            document.getElementById('cookiesBox').style.display = 'none';
+            sessionStorage.setItem('cookiesDismissed', 'true');
+        });
+
+        document.getElementById('cancel_cookies').addEventListener('click', function () {
+            document.getElementById('cookiesBox').style.display = 'none';
+            sessionStorage.setItem('cookiesDismissed', 'true');
+        });
+    </script>
 </body>
 
 </html>
